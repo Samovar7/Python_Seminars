@@ -5,5 +5,5 @@
 a = int(input('Input number: a = '))
 b = int(input('Input number two: b =  '))
 print(f'Summ of numbers a and b is {a + b}')
-name = input('What is youre name? \n :')
+name = input('What is youre name? \n >>:')
 print(f'Hello {name}!')
