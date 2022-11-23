@@ -22,4 +22,5 @@ next_day_result = start * 1.1
 while next_day_result < end:
     count_day += 1
     next_day_result *= 1.1
-print(f'На {count_day}-й день спортсмен достигнет результата не менее {round(end,3)} км.')
+print(
+    f'На {count_day}-й день спортсмен достигнет результата не менее {round(end, 3)} км.')
