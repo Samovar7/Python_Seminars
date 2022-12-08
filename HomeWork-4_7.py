@@ -8,21 +8,24 @@
 факториал четырёх 4! = 1 * 2 * 3 * 4 = 24.
 '''
 
+
 def find_factorial(num):
     if num == 1:
         return 1
     else:
-        return num * find_factorial(num-1)
+        return num * find_factorial(num - 1)
+
 
 def gen_fact(n):
-    for i in range(1, n+1):
+    for i in range(1, n + 1):
         yield find_factorial(i)
 
-n=0
-while n <=0:
+
+n = 0
+while n <= 0:
     try:
         n = int(input('Введите целое число больше 0: '))
     except:
-        n=0
+        n = 0
 for el in gen_fact(n):
     print(el, end=' ')

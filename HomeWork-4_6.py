@@ -12,18 +12,20 @@
 
 from itertools import count, cycle
 
-n=0
-while n <=0:
+n = 0
+while n <= 0:
     try:
-        n = int(input('Введите целое число больше 0 с которого начнется генерация целых чисел: '))
+        n = int(input(
+            'Введите целое число больше 0 с которого начнется генерация целых чисел: '))
     except:
         n = 0
 count_number = 0
-while count_number <=0:
+while count_number <= 0:
     try:
-        count_number = int(input('Введите количество чисел, которые нужно сгенерировать: '))
+        count_number = int(
+            input('Введите количество чисел, которые нужно сгенерировать: '))
     except:
-        count_number=0
+        count_number = 0
 
 for i in count(n):
     if i >= n + count_number:
