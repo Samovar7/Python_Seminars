@@ -16,12 +16,8 @@ for i in range(1,len(lst)):
     if lst[i] > lst[i-1]:
         lst_new.append(lst[i])
 print(lst_new)
-'''
-gen = (randrange(100) for el in range(n))
-tmp = iter(gen)
-print(gen)
-for i in range(1, n):
-    next(gen)
-    tmp = iter(gen)
-    print(gen)
-'''
+
+  
+# Вариант с LC
+list_new_2 = [lst[el] for el in range(1, len(lst)) if lst[el] > lst[el-1]]
+print(list_new_2)

@@ -7,7 +7,7 @@
 Петров 13749.32
 '''
 
-my_file = open("task-5_3.txt", "r", encoding='utf-8')
+my_file = open("task_5_3.txt", "r", encoding='utf-8')
 sum = 0
 count = 0
 for line in my_file:

@@ -4,10 +4,10 @@
 выводить ее на экран.
 '''
 
-my_file = open("task-1.txt", "w")
+my_file = open("task_1.txt", "w")
 my_file.write(input("Введите числа через пробел: "))
 my_file.close()
-my_file = open("task-1.txt", "r")
+my_file = open("task_1.txt", "r")
 sum = 0
 for line in my_file:
     for i in line.split():

@@ -9,7 +9,7 @@ Four — 4
 Новый блок строк должен записываться в новый текстовый файл.
 '''
 
-my_file = open("task-5_4.txt", "r", encoding='utf-8')
+my_file = open("task_5_4.txt", "r", encoding='utf-8')
 content = my_file.readlines()
 my_file.close()
 print(content)
@@ -29,6 +29,6 @@ for str in content:
         content[i] = str.replace('Four', 'Четыре')
         continue
 print(content)
-my_file = open("task-5_4-ru.txt", "w", encoding='utf-8')
+my_file = open("task_5_4_ru.txt", "w", encoding='utf-8')
 my_file.writelines(content)
 my_file.close()
