@@ -94,6 +94,7 @@ class Position(Woker):
     def total_income(self):
         return self.get_total_income()
 
+
 Ivanov = Position("Сергей", "Иванов", "Слесарь")
 Ivanov.wage = 20000.00
 Ivanov.bonus = 5000.00
