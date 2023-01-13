@@ -24,7 +24,8 @@ class WokerMetaClass(type):
 
 
 class WageControl:
-    """Этот класс поможет нам сделать атрибуты дескрипторами"""
+    """Дескриптор для атрибута wage.
+    Контроль отрицательного значения и типа данных."""
 
     def __init__(self, my_attr):
         self.my_attr = my_attr
@@ -82,6 +83,7 @@ class Position(Woker):
 
     def get_total_income (self):
         """Считаем общий доход за месяц: зп+бонус"""
+        
         total_income = self.wage + self.bonus
         return total_income
 
