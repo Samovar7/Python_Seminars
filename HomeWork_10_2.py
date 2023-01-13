@@ -95,9 +95,12 @@ class Position(Woker):
 
 
 ivanov = Position("Сергей", "Иванов", "Слесарь", 20000.00, 5000.00)
-print(f"Доход сотрудника {ivanov.full_name} в текущем месяце составляет: {ivanov.total_income} руб.")
+print(f"Доход сотрудника {ivanov.full_name} в текущем месяце составляет:"
+      f" {ivanov.total_income} руб.")
 ivanov.wage = 20000.00
 ivanov.bonus = 15000.00
-print(f"Доход сотрудника {ivanov.full_name} в текущем месяце составляет: {ivanov.total_income} руб.")
-petrov = Position("Петр", "Петров", "Сантехник", 25000.00, 7000.00)
-print(f"Доход сотрудника {petrov.full_name} в текущем месяце составляет: {petrov.total_income} руб.")
+print(f"Доход сотрудника {ivanov.full_name} в текущем месяце составляет: "
+      f"{ivanov.total_income} руб.")
+petrov = Position("Петр", "Петров", "Сантехник", 25000.00, 17000.00)
+print(f"Доход сотрудника {petrov.full_name} в текущем месяце составляет: "
+      f"{petrov.total_income} руб.")
